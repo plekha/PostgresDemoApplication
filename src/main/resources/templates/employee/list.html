@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Core Online Tutorial - List Products</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+    <link href="../../static/css/spring-core.css"
+          th:href="@{css/spring-core.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div class="container">
+    <div th:if="${not #lists.isEmpty(employees)}">
+        <h2>Employee List</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>employeeName</th>
+                <th>firstName</th>
+                <th>lastName</th>
+                <th>cntctNo</th>
+                <th>DOB</th>
+
+                <th>List</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tr th:each="employee : ${employees}">
+                <td th:text="${employee.employeeName}"></td>
+                <td th:text="${employee.firstName}"></td>
+                <td th:text="${employee.lastName}"></td>
+
+                <td th:text="${employee.contNo}"></td>
+                <td th:text="${employee.dOB}"></td>
+                <td><a th:href="${'/api/employee/show/' + employee.id}">View</a> </td>
+                <td><a th:href="${'/api/employee/edit/' + employee.id}">Edit</a> </td>
+                <td><a th:href="${'/api/employee/delete/' + employee.id}">Delete</a> </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <a href="/api/employee/new">New Product</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

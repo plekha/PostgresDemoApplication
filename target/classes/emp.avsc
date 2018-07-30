@@ -1,0 +1,59 @@
+{
+
+	"type": "record",
+	"name": "Employee1",
+	"fields": [{
+			"name": "id",
+			"type": "long"
+		},
+		{
+			"name": "contNo",
+			"type": "string"
+		},
+		{
+			"name": "employeeName",
+			"type": "string"
+		},
+		{
+			"name": "dOB",
+			"type": "string"
+		},
+		{
+			"name": "firstName",
+			"type": "string"
+		},
+		{
+			"name": "lastName",
+			"type": "string"
+		},
+		{
+			"name": "middleName",
+			"type": "string"
+		},
+		{
+			"name": "address",
+			"type": "string"
+		},
+		{
+			"name": "apptNo",
+			"type": "string"
+		},
+		{
+			"name": "street",
+			"type": "string"
+		},
+		{
+			"name": "city",
+			"type": "string"
+		},
+		{
+			"name": "state",
+			"type": "string"
+		},
+		{
+			"name": "ssn",
+			"type": "string"
+		}
+
+	]
+}

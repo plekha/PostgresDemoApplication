@@ -1,0 +1,15 @@
+CREATE TABLE Employee(id BIGINT PRIMARY KEY NOT NULL);
+
+alter table employee
+ADD COLUMN employeeName    VARCHAR(20),
+ADD COLUMN contNo       VARCHAR(20),
+ADD COLUMN SSN       VARCHAR(10),
+ADD COLUMN dOB       VARCHAR(50),
+ADD COLUMN firstName       VARCHAR(30),
+ADD COLUMN lastName        VARCHAR(30),
+ADD COLUMN middleName       VARCHAR(30),
+ADD COLUMN address       VARCHAR(20),
+ADD COLUMN doorNo       VARCHAR(20),
+ADD COLUMN street       VARCHAR(20),
+ADD COLUMN town       VARCHAR(20),
+ADD COLUMN state       VARCHAR(20);
