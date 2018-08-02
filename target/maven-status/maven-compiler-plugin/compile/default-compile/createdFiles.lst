@@ -1,7 +1,13 @@
+com\i9\postgresdemo\controller\FormController.class
 com\i9\postgresdemo\PostgresDemoApplication.class
+com\i9\postgresdemo\service\FormService.class
 com\i9\postgresdemo\repo\EmployeeRepository.class
 com\i9\postgresdemo\avro\AvroSerializer.class
+com\i9\postgresdemo\model\Form.class
 com\i9\postgresdemo\model\Employee.class
+com\i9\postgresdemo\serviceimpl\FormServiceImpl.class
 com\i9\postgresdemo\controller\INineController.class
 com\i9\postgresdemo\serviceimpl\EmployeeServiceImpl.class
+com\i9\postgresdemo\controller\EmployeeController.class
+com\i9\postgresdemo\repo\FormRepository.class
 com\i9\postgresdemo\service\EmployeeService.class
